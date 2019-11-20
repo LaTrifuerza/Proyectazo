@@ -10,7 +10,7 @@ using namespace std;
 
 class Usuario
 {
-    private:// nombre, apellido, edad, aspecto elegido, como empezo y como termino
+    protected:// nombre, apellido, edad, aspecto elegido, como empezo y como termino
             char nombre[100];
             char apellido[100];
             char codigo[100];
@@ -25,12 +25,13 @@ class Usuario
             char auxNombre[100];// modificar nombre
             char auxApellido[100];
             char auxEdad[100];
+            string listanombres[];
 
     public:
 
         Usuario();
         ~Usuario();
-        void cuestionario();
+//        void cuestionario();
         void mostrarDatos();
         void Registrar();
         void Eliminar();

@@ -12,27 +12,6 @@ Usuario::Usuario(){}
 
 Usuario::~Usuario(){}
 
-void Usuario::cuestionario()/// no hay uso
-{
-    ofstream info;
-    ifstream verificar;//verifica si hay registros con misma clave
-    info.open("Prueba2.txt",ios::out);
-
-    if(info.fail())
-    {
-        cout<<"No se pudo abrir el archivo.";
-        exit(1);
-    }
-
-    cout<<"Nombre: ";cin>>nombre;
-    cout<<"Apellido: ";cin>>apellido;
-    cout<<"Edad: ";cin>>edad;
-    cout<<"Codigo: ";cin>>codigo;
-
-    info<<"nombre: "<<nombre<<" "<<"apellido: "<<apellido<<" "<<"edad :"<<edad<<" ";
-    info.close();
-}
-
 void Usuario::mostrarDatos()
 {
     ifstream info;
@@ -200,14 +179,14 @@ void Usuario::buscar()
                 info>>clave;//lectura adelantada
             }
 
-        }
+
         if(encontrado==false)
             {
                 cout<<"No hay registros con la Clave ingresada: "<<auxClave<<endl;
             }
         info.close();//se cierra el archivo
+    }
 }
-
 
 void Usuario::Modificar()
 {
