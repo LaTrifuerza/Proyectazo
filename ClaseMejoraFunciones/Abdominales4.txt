@@ -1,0 +1,3 @@
+Usted eligio Escaladas: 
+       A partir de la posicion de plancha, jalas un pie hacia el pecho, regresas a
+       la posicion inicial y repites con el otro, como si estuvieras escalando una montaña. 

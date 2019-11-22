@@ -1,0 +1,5 @@
+Usted eligio Zancadas Alternas:
+             La posicion inicial es en cuclillas y con las manos posicionadas en la cadera.
+             Adelanta una pierna y la otra, alternativamente.
+             Ten en cuenta que la pierna que se encuentre levantada 
+             no debe superar un angulo de 90 grados.

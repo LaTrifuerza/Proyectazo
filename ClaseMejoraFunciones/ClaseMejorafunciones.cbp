@@ -34,11 +34,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Estadistica.h" />
+		<Unit filename="include/Inteligencia.h" />
 		<Unit filename="include/Mejora.h" />
 		<Unit filename="include/Psicologia.h" />
+		<Unit filename="include/Usuario.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Estadistica.cpp" />
+		<Unit filename="src/Inteligencia.cpp" />
 		<Unit filename="src/Mejora.cpp" />
 		<Unit filename="src/Psicologia.cpp" />
+		<Unit filename="src/Usuario.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
