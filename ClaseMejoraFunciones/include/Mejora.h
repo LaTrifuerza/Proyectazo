@@ -13,7 +13,7 @@ private:
         int opcion_piernas;
         int opcion_brazos;
         int opcion_espalda;
-//        string nombre;
+
 public:
         char volver;
         void Regresa_Abdominales();

@@ -30,26 +30,24 @@ void Psicologia::Ordenar()
 {
     cout<<"Cuantas horas de estudio tienes al dia?: \n";
     cout<<"Cuantas horas al dia duermes?: \n";
-    cout<<"Usualmente olvidas lo que debes hacer?: \n";
-    cout<<"\t\t\t\t presiona s para si. \n";
-    cout<<"\t\t\t\t presiona n para no. \n\n";
-    Volver_menu();
+    cout<<"Usualmente recuerdas lo que debes hacer?: \n";
+    cout<<"\t\t\t\t presiona (si) o (no). \n\n";
     cin>>horas_estudio>>horas_suenio>>olvido;
 
     Horaestudio(horas_estudio);
     Horasdesuenio(horas_suenio);
     Recordatorio(olvido);
-    Volver_ordenar();
+    Volver_menu();
 }
 
 int Psicologia::Horaestudio(int horas_estudio)
 {
     if(horas_estudio>24){cout<<"El dia solo tiene 24 horas  \n";}
     else if(horas_estudio<0){cout<<"El dia tiene mas de 0 horas  \n";}
-    else if(horas_estudio>=0 && horas_estudio<=8){cout<<"Tu rutina de estudio es ligera, deberias tener hobbies para aprovechar tu tiempo\n";}
-    else if(horas_estudio>8 && horas_estudio<=15){cout<<"Tu rutina de estudio es moderada,  \n";}
-    else if(horas_estudio>15 && horas_estudio<=20){cout<<"Tu rutina de estudio es pesada \n";}
-    else if(horas_estudio>20 && horas_estudio<=24){cout<<"Tu rutina de estudio es demasiado pesada, te recomendamos darte descansos de unos minutos para despejarte un poco. \n";}
+    else if(horas_estudio<=8){cout<<"Tu rutina de estudio es ligera, deberias tener hobbies para aprovechar tu tiempo\n";}
+    else if(horas_estudio<=15){cout<<"Tu rutina de estudio es moderada  \n";}
+    else if(horas_estudio<=20){cout<<"Tu rutina de estudio es pesada \n";}
+    else if(horas_estudio<=24){cout<<"Tu rutina de estudio es demasiado pesada, te recomendamos darte descansos de unos minutos para despejarte un poco. \n";}
 }
 
 
@@ -57,17 +55,17 @@ int Psicologia::Horasdesuenio(int horas_suenio)
 {
     if (horas_suenio>24){cout<<"Ya te moriste \n";}
     else if(horas_suenio<0){cout<<"Acaso eres el mesias? \n";}
-    else if(horas_suenio>=0 && horas_suenio<=6){cout<<"Deberias descansar mas o empeoraras tu rendimiento en tus actividades diarias \n";}
-    else if(horas_suenio>6 && horas_suenio<=8){cout<<"Duermes lo necesario, no deberias tener problemas de cansancio \n";}
-    else if(horas_suenio>8 && horas_suenio<=12){cout<<"Duermes como un liron, arriba! haz algo productivo \n";}
-    else if(horas_suenio>12 && horas_suenio<=24){cout<<"Eres un oso \n";}
+    else if(horas_suenio<=6){cout<<"Deberias descansar mas o empeoraras tu rendimiento en tus actividades diarias \n";}
+    else if(horas_suenio<=8){cout<<"Duermes lo necesario, no deberias tener problemas de cansancio \n";}
+    else if(horas_suenio<=12){cout<<"Duermes como un liron, arriba! haz algo productivo \n";}
+    else if(horas_suenio<=24){cout<<"Eres un oso \n";}
 }
 
-string Psicologia::Recordatorio(char olvido)
+string Psicologia::Recordatorio(string olvido)
 {
 
-    if(olvido =='s'){cout<<"Muy bien, se nota que eres organizado, el orden te servira para ser una persona exitosa \n";}
-    else if(olvido=='n'){cout<<"Tener una libreta y anotar tus actividades ayudan a tener mas orden y controlar mejor tus tiempos \n";}
+    if(olvido =="si"||olvido=="Si"||olvido=="SI"){cout<<"Muy bien, se nota que eres organizado, el orden te servira para ser una persona exitosa \n";Volver_menu();}
+    else if(olvido=="no"||olvido=="No"||olvido=="NO"){cout<<"Tener una libreta y anotar tus actividades ayudan a tener mas orden y controlar mejor tus tiempos \n";Volver_menu();}
 
 }
 
@@ -76,21 +74,21 @@ void Psicologia::Autoestima()
     cout<<"Si estas en esta seccion, es claro que saldras como todo un ganador \n";
     cout<<"Del 1 al 10 que tanto te gusta como eres? \n";
     cout<<"Del 1 al 10 que tan dificil se te hace expresar tus ideas? \n";
-    cout<<"Te dejas influenciar por lo que la mayoria dice? \n Presiona 1 para si. \n Presiona 2 para no. \n";
-    Volver_menu();
+    cout<<"Te dejas influenciar por lo que la mayoria dice? \n Presiona (si) o (no). \n";
     cin>>gusto>>expresion>>influencia;
     Gusto_personal(gusto);
     Expresion(expresion);
     Decision(influencia);
+    Volver_menu();
 }
 
 void Psicologia::Gusto_personal(int gusto)
 {
         if(gusto>10){cout<<"Tu autoestima es tan alta como las esperanzas que ella te dio \n\n";}
         else if(gusto<0){cout<<"Tu autoestima es tan baja como lo bajo que cayo tu dignidad \n\n";}
-        else if(gusto>=0 && gusto<=4){cout<<"Tienes una autoestima baja, a continuacion te daremos unos consejos para aumentarla \n\n";Consejos_autoestima();}
-        else if(gusto>4 && gusto<=7){cout<<"Tu autoestima esta en un nivel medio, aqui tienes unos consejos para incrementarla un poco mas \n\n";Consejos_autoestima();}
-        else if(gusto>7 && gusto<=10){cout<<"Tu autoestima es alta, sigue asi campeon \n\n";}
+        else if(gusto<=4){cout<<"Tienes una autoestima baja, a continuacion te daremos unos consejos para aumentarla \n\n";Consejos_autoestima();}
+        else if(gusto<=7){cout<<"Tu autoestima esta en un nivel medio, aqui tienes unos consejos para incrementarla un poco mas \n\n";Consejos_autoestima();}
+        else if(gusto<=10){cout<<"Tu autoestima es alta, sigue asi campeon \n\n";}
 }
 
 void Psicologia::Consejos_autoestima()
@@ -116,10 +114,10 @@ void Psicologia::Expresion(int expresion)
     else if(expresion>5){cout<<"Tu nivel de expresion es alto, se te hace facil compartir tus ideas, eres una persona decidida. Sigue asi! \n\n";}
 }
 
-void Psicologia::Decision(int influencia)
+string Psicologia::Decision(string influencia)
 {
-    if(influencia==1){cout<<"Esto es malo si llegas a ser la 'sombra' de los demas, seguir siempre a los demas te vuelve dependiente, \n deberias pensar mas en ti, en tus gustos y en que es lo que quieres. Te volveras una persona mas decidida y tendras mas confianza \n\n";}
-    else if(influencia==2){cout<<"Eso es lo que hace una persona decidida, defiendes tus ideas pero siempre con empatia y respeto. Te hace mejor persona \n\n";}
+    if(influencia=="si" || influencia=="Si" || influencia=="SI"){cout<<"Esto es malo si llegas a ser la 'sombra' de los demas, seguir siempre a los demas te vuelve dependiente, \n deberias pensar mas en ti, en tus gustos y en que es lo que quieres. Te volveras una persona mas decidida y tendras mas confianza \n\n";}
+    else if(influencia=="no" || influencia=="No" || influencia=="NO"){cout<<"Eso es lo que hace una persona decidida, defiendes tus ideas pero siempre con empatia y respeto. Te hace mejor persona \n\n";}
 }
 
 void Psicologia::Emocion()
@@ -176,7 +174,7 @@ void Psicologia::Tristeza()
     cout<<" es mejor salir de tu burbuja que seguir aislado \n";
     Volver_emociones();
 }
-void Psicologia::Volver_emociones()
+void Psicologia::Volver_emociones()/// funciones para volver atras
 {
     cout<<"Presiona v para volver. \n";cin>>volver_emocion;
     if(volver_emocion=='v'){Emocion();}
@@ -188,8 +186,4 @@ void Psicologia::Volver_menu()
     if(volver_menu=='v'){Pregunta();}
 }
 
-void Psicologia::Volver_ordenar()
-{
-    cout<<"Presiona v para volver. \n";cin>>volver_orden;
-    if(volver_orden=='v'){Ordenar();}
-}
+

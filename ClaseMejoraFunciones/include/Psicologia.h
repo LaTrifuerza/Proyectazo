@@ -14,11 +14,11 @@ class Psicologia
             int horas_suenio;
             int gusto;
             int expresion;
-            int influencia;
+            string influencia;
             char volver_emocion;
             char volver_orden;
             char volver_menu;
-            char olvido;
+            string olvido;
 
 
     public:
@@ -28,13 +28,13 @@ class Psicologia
         void Ordenar();
         int Horaestudio(int);
         int Horasdesuenio(int);
-        string Recordatorio(char);
+        string Recordatorio(string);
         void Autoestima();
         void Regresar_atras();
         void Gusto_personal(int);
         void Consejos_autoestima();
         void Expresion(int);
-        void Decision(int);
+        string Decision(string);
         void Emocion();
         void Alegria();
         void Enojo();

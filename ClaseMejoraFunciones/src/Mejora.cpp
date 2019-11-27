@@ -5,16 +5,6 @@
 using namespace std;
 
 
-/*
-void Mejora::Mostrar_mensaje()
-{
-    string nombre;
-    cout<<"Como te llamas? ";cin>>nombre;
-    cout<<" Hola  "<<nombre<<"!"<<endl;
-    cout<<" Bienvenido a PERSONAL UPDATE "<<endl;
-    cout<<endl;
-}
-*/
 Mejora::Mejora()
 {
 
