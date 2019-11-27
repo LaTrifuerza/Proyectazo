@@ -95,8 +95,7 @@ void Usuario::Registrar()
                     cout<<"Apellido: ";cin>>apellido;
                     cout<<"Edad: ";cin>>edad;
                     cout<<"Codigo: ";cin>>codigo;
-                    cout<<"Peso: "<<peso<<endl;
-                    cout<<"Altura: "<<altura<<endl;
+
                     info<<auxClave<<" "<<nombre<<" "<<apellido<<" "<<edad<<" "<<codigo<<" "<<peso<<" "<<altura<<"\n";// En "info se almacenan los datos, siguiendo el orden en el que se pidieron"
                     cout<<"Su registro se ha completado. "<<endl;
                     cout<<"__________________________________________"<<endl;
@@ -235,8 +234,6 @@ void Usuario::mostrarDatos()
         cout<<"Apellido: "<<apellido<<endl;
         cout<<"Edad: "<<edad<<endl;
         cout<<"Codigo: "<<codigo<<endl;
-        cout<<"Peso: "<<peso<<endl;
-        cout<<"Altura: "<<altura<<endl;
 
         info>>clave;//otra lectura adelantada
         cout<<"__________________________________________"<<endl;
@@ -270,8 +267,7 @@ void Usuario::buscar()
                     cout<<"Apellido: "<<apellido<<endl;
                     cout<<"Edad: "<<edad<<endl;
                     cout<<"Codigo: "<<codigo<<endl;
-                    cout<<"Peso: "<<peso<<endl;
-                    cout<<"Altura: "<<altura<<endl;
+
                     cout<<"_______________________________"<<endl;
                     encontrado=true;//si entró, se volvio true
                     break;

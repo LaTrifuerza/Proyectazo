@@ -80,8 +80,8 @@ void Estadistica::Modificar()
                     cout<<"Apellido: "<<apellido<<endl;
                     cout<<"Edad: "<<edad<<endl;
                     cout<<"Codigo: "<<codigo<<endl;
-                    cout<<"Peso: "<<peso<<endl;
-                    cout<<"Altura: "<<altura<<endl;
+                    cout<<"Peso: "<<peso<<" Kilogramos"<<endl;
+                    cout<<"Altura: "<<altura<<" Metros"<<endl;
                     cout<<"_______________________________"<<endl;
 
 // se vuelve a pedir nuevos datos para su modificacion
