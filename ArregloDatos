@@ -1,0 +1,117 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int indice = 0;
+int indice_nombres = 0;
+string lineatexto[5];
+string nombres[5];// arreglo nombres
+string apellidos[5];
+string edades[5];
+
+//void agregarPalabras(string str)
+//{
+//   string word = "";// palabra que está en cada fila
+//   char separador = '|';
+//   for (auto x : str)// auto permite deducir el tipo de valor con el que trabaja
+//   {
+//       // mostrando los caracteres
+//     // si el caracter esta vacio es una nueva palabra
+//
+//       if (x == separador)
+//       {
+//           lineatexto[indice] = word;
+//           indice ++;
+//         //  cout << word << endl;
+//           word = "";
+//        }
+//       // sino se concatena la palabra
+//       else
+//       {
+//           word = word + x;
+//       }
+//   }
+//
+//   // agregando al array de nombres
+//    nombres[indice_nombres] = lineatexto[1];// al arreglo nombre, se le envia lo que contiene el arreglo lineatexto en su posicion, y los nombres estan en la pos. 1
+//    indice = 0;// el indice se usó para recorrer toda una linea en el archivo txt, por lo tanto debe reiniciarse en 0 para recorrer la siguiente
+//    indice_nombres++;// con esto, el arreglo de nombres recibirá TODOS los nombres hasta recorrer todo el archivo
+//
+//}
+
+// Driver function
+
+
+
+
+
+
+
+
+
+
+
+
+///
+void agregarApellidos(string str)
+{
+   string word = "";// palabra que está en cada fila
+   char separador = '|';
+   for (auto x : str)// auto permite deducir el tipo de valor con el que trabaja
+   {
+       // mostrando los caracteres
+     // si el caracter esta vacio es una nueva palabra
+
+       if (x == separador)
+       {
+           lineatexto[indice] = word;
+           indice ++;
+         //  cout << word << endl;
+           word = "";
+        }
+       // sino se concatena la palabra
+       else
+       {
+           word = word + x;
+       }
+   }
+
+   // agregando al array de nombres
+    apellidos[indice_nombres] = lineatexto[2];// al arreglo nombre, se le envia lo que contiene el arreglo lineatexto en su posicion, y los nombres estan en la pos. 1
+    indice = 0;// el indice se usó para recorrer toda una linea en el archivo txt, por lo tanto debe reiniciarse en 0 para recorrer la siguiente
+    indice_nombres++;// con esto, el arreglo de nombres recibirá TODOS los nombres hasta recorrer todo el archivo
+
+}
+///
+int main()// examina el archivo, para enviarle la informacion a AgregarPalabras
+{
+
+    ifstream info;//archivo de lectura
+    info.open("Prueba2.txt",ios::out|ios::in);// se abre el archivo y se leera Prueba2
+
+    if(info.fail())//mensaje de error
+    {
+        cout<<"El archivo no se pudo abrir.";
+        exit(1);
+        return 0;
+    }
+
+    string test;
+    if(info.is_open()){// si "info" esta abierto:
+        while(!info.eof())//mientras info no termine de leer el archivo
+        {
+            info>>test;// info va a leer test
+            agregarApellidos(test);// lo leido, que es toda la linea de datos pasa a agregarPalabras
+
+        }
+    }
+    info.close();
+
+    for (int i = 0; i <5; i++){
+        cout<<apellidos[i]<<endl;// funcion para mostrar finalmente los nombres
+    }
+
+
+    return 0;
+}
