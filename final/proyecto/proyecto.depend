@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1572545289 source:d:\ccomp1\proyecto\main.cpp
+	<iostream>
+	<string>
+	"Libro.h"
+
+1572487020 source:d:\ccomp1\proyecto\pro 2.0.c
+
+1572545259 source:d:\ccomp1\proyecto\src\libro.cpp
+	"Libro.h"
+	<iostream>
+
+1572546048 d:\ccomp1\proyecto\include\libro.h
+
+1572545289 source:d:\ccomp1\proyectdefinitive\proyecto\main.cpp
+	<iostream>
+	<string>
+	"Libro.h"
+
+1572546048 d:\ccomp1\proyectdefinitive\proyecto\include\libro.h
+
+1572487020 source:d:\ccomp1\proyectdefinitive\proyecto\pro 2.0.c
+
+1574462861 source:d:\ccomp1\final\proyecto\main.cpp
+	<iostream>
+	<string>
+	"Libro.h"
+
+1575006403 d:\ccomp1\final\proyecto\include\libro.h
+
+1572487020 source:d:\ccomp1\final\proyecto\pro 2.0.c
+
+1575024107 source:d:\ccomp1\final\proyecto\src\libro.cpp
+	"Libro.h"
+	"enamorar.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+
+1574430278 source:d:\final\proyecto\main.cpp
+	<iostream>
+	<string>
+	"Libro.h"
+
+1574435288 d:\final\proyecto\include\libro.h
+
+1574435247 source:d:\final\proyecto\src\libro.cpp
+	"Libro.h"
+	<iostream>
+	<fstream>
+
+1574462861 source:d:\ccomp1\final\final\proyecto\main.cpp
+	<iostream>
+	<string>
+	"Libro.h"
+
+1574873218 d:\ccomp1\final\final\proyecto\include\libro.h
+
+1574873218 source:d:\ccomp1\final\final\proyecto\src\libro.cpp
+	"Libro.h"
+	<iostream>
+	<fstream>
+
+1574462861 source:d:\ccomp1\enamorar\enamorar\final\proyecto\main.cpp
+	<iostream>
+	<string>
+	"Libro.h"
+
+1575006403 d:\ccomp1\enamorar\enamorar\final\proyecto\include\libro.h
+
+1575006403 source:d:\ccomp1\enamorar\enamorar\final\proyecto\src\libro.cpp
+	"Libro.h"
+	"enamorar.h"
+	<iostream>
+	<fstream>
+
+1574981670 d:\ccomp1\enamorar\enamorar\final\proyecto\include\enamorar.h
+
+1574981670 d:\ccomp1\final\proyecto\include\enamorar.h
+
